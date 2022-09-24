@@ -39,7 +39,7 @@ p {
 
 /* флекс тренінг) */
 
-.page-header {
+.container.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,6 +96,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav-portfolio {
@@ -104,6 +106,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav-portfolio:hover,
@@ -124,6 +128,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .info-link a:hover,
 .info-link a:focus {
@@ -135,7 +141,7 @@ p {
   background-color: var(--background-color-dark);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero-headline {
   color: var(--white-color);
@@ -211,10 +217,9 @@ p {
   margin-bottom: 0;
   width: 270px;
 }
-
+/* чим ми займаємось */
 .section {
   padding-bottom: 94px;
- 
 }
 
 .section-headings {
@@ -226,10 +231,13 @@ p {
   text-align: center;
   margin: 0;
   display: block;
-
   margin-bottom: 50px;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .section-images {
   display: flex;
   gap: 30px;
@@ -250,12 +258,14 @@ p {
 .team {
   display: flex;
   gap: 30px;
-  padding-bottom: 30px;
 }
 
-.group {
-  padding-bottom: 94px;
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
 }
+
 .team-names {
   font-weight: 500;
   font-size: 16px;
@@ -293,19 +303,18 @@ p {
 .address {
   font-style: normal;
   margin-top: 20px;
-  width: 231px;
 }
 .contacts-details {
-  color: var(--address-color);
+  color: var(--white-color);
   line-height: 1.7;
   text-align: left;
   text-decoration: none;
 }
 .contacts .contacts-details:hover,
 .contacts .contacts-details:focus {
-  color: var(--white-color);
+  color: var(--address-color);
 }
-.address-list {
+.address-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -317,14 +326,15 @@ p {
 }
 
 .works {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .button-filters {
@@ -356,13 +366,6 @@ p {
   padding-bottom: 94px;
 }
 
-.catalog-items {
-  padding-bottom: 20px;
-}
-.catalog-images {
-  margin-bottom: 20px;
-}
-
 .catalog-title {
   font-weight: 700;
   font-size: 18px;
@@ -370,7 +373,6 @@ p {
   letter-spacing: 0.06em;
   text-decoration: none;
   margin-bottom: 4px;
-  padding: 0 24px;
 }
 .catalog .application {
   color: var(--grey-text-color);
@@ -378,5 +380,11 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding: 0 24px;
+}
+
+.catalog-text {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
